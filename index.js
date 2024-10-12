@@ -1,5 +1,6 @@
 import app from './src/app.js'; // Importing app from app
 import http from 'http'; // Importing http module// Importing initializeDatabase from db/index
+import initializeDatabase from './src/db/index.js';
 const port = process.env.PORT || 8889; // Setting port number
 
 // Starting server using listen function
@@ -7,7 +8,7 @@ const server =  http.createServer(app);
 
 server.listen(port, function () {
     console.log("inside server.listen");
-    // initializeDatabase();
+    initializeDatabase();
 
 
        console.log("Server has been started at "+port);

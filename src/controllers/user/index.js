@@ -1,4 +1,4 @@
-
+import { Account } from "../../db/schema/index.js";
 async function getUser(req, res) {
     res.status(200).send({ message: 'Get Route' });
 }
